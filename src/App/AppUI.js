@@ -19,7 +19,7 @@ function AppUI() {
 			<TodoList>
 				{error && <p>Hubo un error :(</p>}
 				{loading && <p>Cargando lista...</p>}
-				{!loading && !searchedTodos.length && <p>Crea tu primera tarea con el botón +a</p>}
+				{!loading && !searchedTodos.length && <p>Crea tu primera tarea con el botón +</p>}
 				{searchedTodos.map((todo) => (
 					<TodoItem
 						key={todo.text}
